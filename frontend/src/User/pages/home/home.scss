@@ -1,0 +1,24 @@
+@import "../../style.scss";
+
+.home{
+  @include themify($themes) {
+    padding: 20px 70px;
+    height: 100vh;
+    background-color: themed("bgSoft");
+    .innerCard{
+      background-color: themed("bg");
+      color: themed("textColor");
+
+
+    }
+
+    @include mobile {
+      padding: 10px;
+    }
+
+    @include tablet{
+      padding: 20px;
+    }
+  }
+ }
+ 
